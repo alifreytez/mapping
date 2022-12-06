@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBiL3nGIgWIyT5j22FjF8fvC-Uo4tz_P5o&libraries=places,geometry&callback=initMap" defer></script>
+	<script src="js.js"></script>
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css.css">
+
+	<title>Document</title>
+</head>
+<body>
+	<main>
+		<section class="calc-wrapper">
+			<h2 class="calc-title">Costo por distancia</h2>
+			<form id="calc-form" class="calc-form">
+				<div class="calc-double-box input-box">
+					<div class="calc-box">
+						<input type="text" id="point-a" class="calc-point-input" placeholder="Punto A">
+					</div>
+					<div class="calc-box">
+						<input type="text" id="point-b" class="calc-point-input" placeholder="Punto B">
+					</div>
+				</div>
+				<button type="button" id="calc-btn" class="calc-btn">Calcular</button>
+				<div class="calc-double-box result-box">
+					<div class="calc-box">
+						<span class="calc-result-ref">Distancia </span><span id="calc-distance" class="calc-result-value"></span>
+					</div>
+					<div class="calc-box">
+						<span class="calc-result-ref">Tarifa </span><span id="calc-rate" class="calc-result-value"></span>
+					</div>
+				</div>
+			</form>
+		</section>
+	</main>
+</body>
+</html>
